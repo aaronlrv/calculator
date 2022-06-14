@@ -34,18 +34,14 @@
 }
 
 button{
-    height: 100px;
+    height: 80px;
     width: 100px;
 }
 
 .numbers{
-    border-color: black;
-    border-width: 5px;
-    border-style: solid;
+
     width: 600px;
     height: 500px;
-    
-    
 }
 
 .operators{
@@ -55,11 +51,14 @@ button{
     justify-content: flex-start;
     flex-wrap: nowrap;
     width: 150px;
+    gap:6px;
+    margin-top: 8px;
 }
 
 
-.b1 , .b2 , .b3 , .b4, .b5 , .b6 , .b7, .b8, .b9{
+.b1 , .b2 , .b3 , .b4, .b5 , .b6 , .b7, .b8, .b9 .b0{
     height: 150px;
     width: 170px;
     margin: 8px;
+
 }
