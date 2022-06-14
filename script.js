@@ -39,12 +39,20 @@ console.log (operate(4,2,"/"))
 
 
 let buttons = document.querySelector(".numbers")
+let display = document.querySelector(".calculator-display")
 
 buttons.addEventListener("click", e => {
     console.log(e.target)
     console.log(e)
-    console.log(e.className)
+
+
+ let idTarget = e.target.id
+ console.log(idTarget)
+
+display.append(idTarget)
+
 })
+
 /*
 console.log(add(2,7)) /// 9
 console.log(subtract(7,2)) /// 5
