@@ -35,12 +35,12 @@ function operate(a,b,operator){
     }
 }
 
-console.log (operate(7,2,"+"))
+console.log (operate(4,2,"/"))
 
 
 /*
 console.log(add(2,7)) /// 9
 console.log(subtract(7,2)) /// 5
-console.log(multiply(9,9)) /// 82
+console.log(multiply(9,9)) /// 81
 console.log(divide(4,2)) /// 2
 */
