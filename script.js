@@ -28,18 +28,22 @@ if (a === "0" || b === "0"){
 function operate(a,b,operator){
     if (operator === "+"){
     let final =  add (a,b)
+     final = final.toFixed(5)
     console.log("Answer: ", final)
     return final
     } else if (operator === "-"){
      let final = subtract (a,b)
+      final = final.toFixed(5)
      console.log("Answer: ", final)
      return final
     } else if (operator === "*"){
     let final = multiply (a,b)
+     final = final.toFixed(5)
     console.log("Answer: ", final)
     return final
     } else {
      let final = divide (a,b)
+      final = final.toFixed(5)
      console.log("Answer: ", final)
      return final
     }
