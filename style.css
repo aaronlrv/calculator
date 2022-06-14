@@ -45,13 +45,21 @@ button{
     width: 600px;
     height: 500px;
     
+    
 }
 
-.operators, .equals{
+.operators{
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: center;
     justify-content: flex-start;
     flex-wrap: nowrap;
     width: 150px;
+}
+
+
+.b1 , .b2 , .b3 , .b4, .b5 , .b6 , .b7, .b8, .b9{
+    height: 150px;
+    width: 170px;
+    margin: 8px;
 }
