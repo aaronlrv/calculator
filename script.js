@@ -37,6 +37,13 @@ function operate(a,b,operator){
 
 console.log (operate(4,2,"/"))
 
+const b1 = document.querySelector(".b1")
+
+
+b1.addEventListener("click", e => {
+    console.log(e.target)
+})
+
 
 /*
 console.log(add(2,7)) /// 9
