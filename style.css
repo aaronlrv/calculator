@@ -6,8 +6,18 @@
     background-color: #F1C0B9; 
   }
 
+  html, body {
+      min-height: 100vh; 
+      min-width: 100vw;
+    }
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
   main{
-    height: 100vh;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -96,4 +106,16 @@ button{
 
 .equal, .clear{
     background-color: #1D741B;
+}
+
+
+.footer{
+    display: flex;
+    margin-top: auto;
+    background-color: #2E382E;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 20px;
 }
