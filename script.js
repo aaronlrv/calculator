@@ -14,9 +14,15 @@ function multiply (a,b){
 }
 
 function divide (a,b){
-    let total = +a / +b
+
+if (a === "0" || b === "0"){
+    alert ("Error!")
+    return
+}
+    let total = +a / +b    
     return total
 }
+
 
 
 function operate(a,b,operator){
@@ -48,6 +54,7 @@ let minusButton = document.querySelector(".subtract")
 let divideButton = document.querySelector(".divide")
 let multiplyButton = document.querySelector(".multiply")
 let equals = document.querySelector(".equal")
+let clear = document.querySelector(".clear")
 
 let a = 0
 let b = 0    
@@ -67,6 +74,7 @@ buttons.addEventListener("click", e => {
  let screenNumber = display.textContent
  console.log(screenNumber)
 
+
  if (operator === null){
     a = screenNumber
     return a
@@ -80,10 +88,18 @@ buttons.addEventListener("click", e => {
 
 equals.addEventListener("click", e => {
 
-    operate(a, b, operator)
+    if (b === null || operator === null){
+        alert("Error! Stop being dumb and pick 2 numbers")
+    }
+    
+
+    let answer = operate(a, b, operator)
     console.log("Variable A: ", a)
     console.log("Variable b: ", b)
 
+
+    display.textContent = "                                   "
+    display.append(answer)
 
     
 })
@@ -93,8 +109,7 @@ addButton.addEventListener("click", e => {
 
      operator = e.target.id
 
-     display.textContent = ""
-     display.textContent = ""
+     display.textContent = 
      display.append(idTarget)
  
     return operator
@@ -103,22 +118,43 @@ addButton.addEventListener("click", e => {
 })
 minusButton.addEventListener("click", e => {
 
-     operator = e.target.id
-    return operator
+    operator = e.target.id
+
+    display.textContent = 
+    display.append(idTarget)
+
+   return operator
+
 })
 divideButton.addEventListener("click", e => {
 
-     operator = e.target.id
-    return operator
+    operator = e.target.id
+
+    display.textContent = 
+    display.append(idTarget)
+
+   return operator
+
 })
 multiplyButton.addEventListener("click", e => {
 
-     operator = e.target.id
-    return operator
+    operator = e.target.id
+
+    display.textContent = 
+    display.append(idTarget)
+
+   return operator
+
 })
 
 
-
+clear.addEventListener("click", e => {
+    display.textContent = 
+    a = null
+    b = null 
+    operator = null
+    idTarget = null
+})
 
 /*
 console.log(add(2,7)) /// 9
