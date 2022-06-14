@@ -18,6 +18,34 @@
     border-style: solid;
     height: 150px;
     margin: 25px;
-
-
 }
+
+.buttons {
+    border-color: black;
+    border-width: 5px;
+    border-style: solid;
+    margin: 25px;
+    margin-top: 50px;
+    height: 525px;
+
+
+    display: flex;
+    flex-direction: column;
+}
+
+button{
+    height: 100px;
+    width: 100px;
+}
+
+.numbers{
+    border-color: black;
+    border-width: 5px;
+    border-style: solid;
+    width: 550px;
+    height: 600px;
+
+
+    
+}
+
