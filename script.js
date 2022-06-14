@@ -40,6 +40,10 @@ console.log (operate(4,2,"/"))
 
 let buttons = document.querySelector(".numbers")
 let display = document.querySelector(".calculator-display")
+let addButton = document.querySelector(".addition")
+let minusButton = document.querySelector(".subtract")
+let divideButton = document.querySelector(".divide")
+let multiplyButton = document.querySelector(".multiply")
 
 buttons.addEventListener("click", e => {
     console.log(e.target)
@@ -52,6 +56,41 @@ buttons.addEventListener("click", e => {
 display.append(idTarget)
 
 })
+
+addButton.addEventListener("click", e => {
+    console.log(e)
+    console.log(e.target)
+    console.log(e.target.id)
+
+    return operator = e.target.id
+})
+minusButton.addEventListener("click", e => {
+    console.log(e)
+    console.log(e.target)
+    console.log(e.target.id)
+
+    return operator = e.target.id
+})
+divideButton.addEventListener("click", e => {
+    console.log(e)
+    console.log(e.target)
+    console.log(e.target.id)
+
+    return operator = e.target.id
+})
+multiplyButton.addEventListener("click", e => {
+    console.log(e)
+    console.log(e.target)
+    console.log(e.target.id)
+
+    return operator = e.target.id
+})
+
+
+
+
+
+
 
 /*
 console.log(add(2,7)) /// 9
