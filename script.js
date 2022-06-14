@@ -37,14 +37,14 @@ function operate(a,b,operator){
 
 console.log (operate(4,2,"/"))
 
-const b1 = document.querySelector(".b1")
 
+let buttons = document.querySelector(".numbers")
 
-b1.addEventListener("click", e => {
+buttons.addEventListener("click", e => {
     console.log(e.target)
+    console.log(e)
+    console.log(e.className)
 })
-
-
 /*
 console.log(add(2,7)) /// 9
 console.log(subtract(7,2)) /// 5
