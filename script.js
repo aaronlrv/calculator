@@ -44,6 +44,11 @@ let addButton = document.querySelector(".addition")
 let minusButton = document.querySelector(".subtract")
 let divideButton = document.querySelector(".divide")
 let multiplyButton = document.querySelector(".multiply")
+let equals = document.querySelector(".equal")
+
+let a = 0
+let b = 0
+
 
 buttons.addEventListener("click", e => {
     console.log(e.target)
@@ -52,10 +57,29 @@ buttons.addEventListener("click", e => {
 
  let idTarget = e.target.id
  console.log(idTarget)
+ console.log(typeof idTarget)
+ display.append(idTarget)
 
-display.append(idTarget)
+ let screenNumber = display.textContent
+ console.log(screenNumber)
+
+ if (operator === null){
+    a = screenNumber
+    return a
+ } else {
+    b = screenNumber
+ }
+
+ console.log(a)
 
 })
+
+equals.addEventListener("click", e => {
+    console.log(e.target.id)
+    operate(a, b, operator)
+
+})
+
 
 addButton.addEventListener("click", e => {
     console.log(e)
@@ -85,9 +109,6 @@ multiplyButton.addEventListener("click", e => {
 
     return operator = e.target.id
 })
-
-
-
 
 
 
