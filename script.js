@@ -92,6 +92,7 @@ equals.addEventListener("click", e => {
         alert("Error! Stop being dumb and pick 2 numbers")
     }
     
+    
 
     let answer = operate(a, b, operator)
     console.log("Variable A: ", a)
@@ -107,6 +108,18 @@ equals.addEventListener("click", e => {
 
 addButton.addEventListener("click", e => {
 
+    if (operator !== null){
+        let answer = operate(a, b, operator)
+        console.log("Variable A: ", a)
+        console.log("Variable b: ", b)
+    
+    
+        display.textContent = "                                   "
+        display.append(answer)
+
+        a = answer
+    }
+
      operator = e.target.id
 
      display.textContent = 
@@ -118,6 +131,18 @@ addButton.addEventListener("click", e => {
 })
 minusButton.addEventListener("click", e => {
 
+    if (operator !== null){
+        let answer = operate(a, b, operator)
+        console.log("Variable A: ", a)
+        console.log("Variable b: ", b)
+    
+    
+        display.textContent = "                                   "
+        display.append(answer)
+
+        a = answer
+    }
+
     operator = e.target.id
 
     display.textContent = 
@@ -128,6 +153,18 @@ minusButton.addEventListener("click", e => {
 })
 divideButton.addEventListener("click", e => {
 
+    if (operator !== null){
+        let answer = operate(a, b, operator)
+        console.log("Variable A: ", a)
+        console.log("Variable b: ", b)
+    
+    
+        display.textContent = "                                   "
+        display.append(answer)
+
+        a = answer
+    }
+
     operator = e.target.id
 
     display.textContent = 
@@ -137,6 +174,18 @@ divideButton.addEventListener("click", e => {
 
 })
 multiplyButton.addEventListener("click", e => {
+
+    if (operator !== null){
+        let answer = operate(a, b, operator)
+        console.log("Variable A: ", a)
+        console.log("Variable b: ", b)
+    
+    
+        display.textContent = "                                   "
+        display.append(answer)
+
+        a = answer
+    }
 
     operator = e.target.id
 
@@ -155,6 +204,8 @@ clear.addEventListener("click", e => {
     operator = null
     idTarget = null
 })
+
+
 
 /*
 console.log(add(2,7)) /// 9
