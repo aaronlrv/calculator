@@ -30,7 +30,7 @@
 
 
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 }
 
 button{
@@ -42,10 +42,16 @@ button{
     border-color: black;
     border-width: 5px;
     border-style: solid;
-    width: 550px;
-    height: 600px;
-
-
+    width: 600px;
+    height: 500px;
     
 }
 
+.operators, .equals{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    width: 150px;
+}
