@@ -42,6 +42,11 @@ button{
 
     width: 600px;
     height: 500px;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 .operators{
@@ -56,9 +61,18 @@ button{
 }
 
 
-.b1 , .b2 , .b3 , .b4, .b5 , .b6 , .b7, .b8, .b9 .b0{
-    height: 150px;
+.b1 , .b2 , .b3 , .b4, .b5 , .b6 , .b7, .b8, .b9, .b0{
+    height: 115px;
     width: 170px;
     margin: 8px;
 
+}
+
+.b0{
+    width: 560px;
+    margin: 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
